@@ -5,10 +5,14 @@ Teste do processo seletivo estagio Target Sistemas
 
 # Primeiro no CLI, rodar: npm install
 # Depois no CLI, rodar: npm run start
-
-
-
-
+#
+#
+#
+#
+#
+#
+#
+#
 # Questões
 #
 
