@@ -1,0 +1,26 @@
+{
+  "name": "estagio-target-sistemas",
+  "version": "1.0.0",
+  "description": "Teste do processo seletivo estagio Target Sistemas",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "node --watch index.js",
+    "watch": "nodemon index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touscool10/teste-processo-estagio-target-sistemas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/touscool10/teste-processo-estagio-target-sistemas/issues"
+  },
+  "homepage": "https://github.com/touscool10/teste-processo-estagio-target-sistemas#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
