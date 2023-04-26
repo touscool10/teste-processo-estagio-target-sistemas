@@ -1,40 +1,28 @@
 // Escreva um programa que inverta os caracteres de um string.
 
 
-const revertString = (number) => {
-    let sequence = computeFibonacciSequenceUpToNumber(number);
+const revertString = (string) => {
+    let stringRevertedSplit = [];
+    let result = "";
 
-    if (sequence.includes(number)) {
-        console.log(`Questão 2: O número ${number}  pertence à sequência de Fibonacci.`);
-        console.log("\n");
-        return  `O número ${number}  pertence à sequência de Fibonacci.`
+    for (let index = string.length - 1; index >= 0; index--) {
+        stringRevertedSplit.push(string[index]);
     }
 
-    console.log(`Questão 2: O número ${number}  NÃO pertence à sequência de Fibonacci.`);
+    for (let index = 0; index < stringRevertedSplit.length; index++) {
+        result+= stringRevertedSplit[index];
+    }
+
+    console.log(`Questão 5: String invertido é ${result}`);
     console.log("\n");
-    return  `O número ${number}  NÃO pertence à sequência de Fibonacci.`
+
+    return result
 };
 
-const computeFibonacciSequenceUpToNumber = (number) => {
-    let sequence = [0,1];
-
-    if (sequence.every(s => s >= number)) {
-        return sequence;
-    } 
-
-    let nextNumber = -1 ;
-
-    while(nextNumber < number){
-        nextNumber  = sequence[sequence.length - 1] + sequence[sequence.length - 2];
-       
-        sequence  = [...sequence, nextNumber];
-    }
-    
-    return sequence;
-
+const auxFunction = () => {  
 
 };
 
 module.exports = {
-    belongsToFibonacciSequence,
+    revertString,
 };
